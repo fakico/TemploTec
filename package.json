@@ -1,0 +1,24 @@
+{
+  "name": "templotecweb",
+  "version": "1.0.0",
+  "description": "Site de TemploTec",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.13.4",
+    "helmet": "^1.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fakico/TemploTec.git"
+  },
+  "author": "JC y Francisco",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/fakico/TemploTec/issues"
+  },
+  "homepage": "https://github.com/fakico/TemploTec#readme"
+}
