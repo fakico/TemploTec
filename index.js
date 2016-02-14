@@ -2,7 +2,7 @@ var express = require('express'),
 	helmet = require('helmet'),
 	app = express(),
 	path = require('path');
-
+	util = require('util');
 
 app.use(helmet());
 
@@ -20,7 +20,32 @@ app.get('/nosotros', function(req, res){
 	res.render('about');
 });
 
+app.get('/cursos/:curso', function(req, res){
+	var curso = req.params.curso;
+	if(curso && typeof curso == "string" && curso.indexOf('.') == -1){
+		curso = curso.toLowerCase();
+		var path = util.format("cursos/%s", curso);
+		//todo: security check
+		return res.render(path);
+	}
+	return res.redirect('/');
+});
 
+app.get('/cursos/:curso/:modulo', function(req, res){
+	var curso = req.params.curso,
+		modulo = req.params.modulo;
+
+	if(curso && typeof curso == "string" && curso.indexOf('.') == -1 &&
+		modulo && typeof modulo == "string" && modulo.indexOf('.') == -1){
+		var path = util.format("cursos/modulos/%s/%s", curso, modulo);
+		curso = curso.toLowerCase();
+		modulo = modulo.toLowerCase();
+		//todo: security check
+		return res.render(path);
+	}	
+
+	return res.redirect('/');
+})
 
 app.use(function(req, res){
 	res.render('404');
