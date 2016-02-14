@@ -1,0 +1,81 @@
+extends layout
+block content
+	// Banner
+	section#banner
+		header
+			h2
+				| TemploTec: 
+				em
+				| única academia de desarrolladores Full Stack							
+	// Highlights
+	section.wrapper.style1
+		.container
+			.row(class='200%')
+				section.4u(class='12u(narrower)')
+					.box.highlight
+						i.icon.major.fa-paper-plane
+						h3 Niveles
+						p
+						| Todos nuestros cursos han sido diseñados pensando en un aprendizaje progresivo y escalonado
+				section.4u(class='12u(narrower)')
+					.box.highlight
+						i.icon.major.fa-pencil
+						h3 Experiencia real
+						p
+						| Transmitir esa experiencia diaria del día a día del trabajo y toda la ganada durante años nos permite ofrecer entrenamiento real
+				section.4u(class='12u(narrower)')
+					.box.highlight
+						i.icon.major.fa-wrench
+						h3 Al día con la tecnología
+						p
+						| Somos testigos de la velocidad con la que la web ha cambiado y lo sigue haciendo. Dominar las nuevas tecnologías es mandatorio
+	// Gigantic Heading
+	section.wrapper.style2
+		.container
+			header.major
+				h2 Entrénate en TemploTec
+				p Registrándote en nuestra comunidad podrás disfrutar de cursos especializados en Node.js y AngularJS  que te llevarán desde nivel principiante hasta nivel avanzado.
+	// Courses
+	a(name="cursos")
+	section.wrapper.style1
+		.container
+			.row
+				section.6u(class='12u(narrower)')
+					.box.post
+						a.image.left(href='#')
+							img(src='images/nodejs.png', alt='')
+						.inner
+							h3 Node.js
+							p
+							| Node.js un entorno en tiempo de ejecución multiplataforma, de código abierto, para la capa del servidor (pero no limitándose a ello) basado en el lenguaje de programación ECMAScript, asíncrono, con I/O de datos en una arquitectura orientada a eventos y basado en el motor V8 de Google. Fue creado con el enfoque de ser útil en la creación de programas de red altamente escalables..
+				section.6u(class='12u(narrower)')
+					.box.post
+						a.image.left(href='#')
+							img(src='images/angularjs.png', alt='')
+						.inner
+							h3 AngularJS
+							p
+							| AngularJS es un framework Javascript de código abierto mantenido por Google, que ayuda con la ejecución de aplicaciones de una sola página(SPA). En muy poco tiempo se ha convertido en la tecnología de referencia para la construcción de este tipo de aplicaciones web modernas.
+			.row
+				section.6u(class='12u(narrower)')
+					.box.post
+						a.image.left(href='#')
+							img(src='images/mongodb.png', alt='')
+						.inner
+								h3 MongoDB
+								p
+								| MongoDB es un sistema de base de datos NoSQL orientado a documentos, desarrollado bajo el concepto de código abierto. MongoDB forma parte de la nueva familia de sistemas de base de datos NoSQL.
+				//section.6u(class='12u(narrower)')
+					.box.post
+						a.image.left(href='#')
+							img(src='images/pic04.jpg', alt='')
+						.inner
+							h3 The Fourth Thing
+							p
+							| Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.
+	// CTA
+	section#cta.wrapper.style3
+		.container
+			header
+				h2 ¿Listo para el reto?
+				a.button(href='#') ¡Inscríbete ahora!

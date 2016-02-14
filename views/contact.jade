@@ -1,0 +1,16 @@
+a(name="contactanos")
+h3 ¿Deseas información sobre nuestros cursos y entrenamientos?
+form
+  .row(class='50%')
+    .6u(class='12u(mobilep)')
+      input#name(type='text', name='name', placeholder='Nombres')
+    .6u(class='12u(mobilep)')
+      input#email(type='email', name='email', placeholder='Correo')
+  .row(class='50%')
+    .12u
+      textarea#message(name='message', placeholder='Mensaje', rows='5')
+  .row(class='50%')
+    .12u
+      ul.actions
+        li
+          input.button.alt(type='submit', value='Enviar mensaje')
