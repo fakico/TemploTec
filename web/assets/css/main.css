@@ -2612,6 +2612,12 @@
 			text-align: center;
 			font-size: 0.9em;
 		}
+		
+		.logoImg{
+		position: absolute;
+		margin-top:-55px; 
+		margin-left:-32px;
+	}
 
 /* Wide */
 
@@ -3149,5 +3155,12 @@
 				padding: 2em 20px;
 				text-align: left;
 			}
+			
+		.logoImg{
+			margin-top: -17px;
+			margin-left: -19px;
+			width: 90px;
+		}
 
 	}
+	
