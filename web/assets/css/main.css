@@ -2347,7 +2347,7 @@
 		}
 
 			#header h1 a {
-				font-size: 1.5em;
+				font-size: 2.5em;
 				letter-spacing: -0.025em;
 				border: 0;
 				text-align: center;
@@ -2476,7 +2476,7 @@
 /* Banner */
 
 	#banner {
-		background-image: url("../../images/banner.jpg");
+		background-image: url("../../images/banner05.png");
 		background-position: center center;
 		background-size: cover;
 		height: 28em;
