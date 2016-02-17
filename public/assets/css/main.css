@@ -2347,9 +2347,10 @@
 		}
 
 			#header h1 a {
-				font-size: 1.5em;
+				font-size: 2.5em;
 				letter-spacing: -0.025em;
 				border: 0;
+				text-align: center;
 			}
 
 	#nav {
@@ -2475,7 +2476,7 @@
 /* Banner */
 
 	#banner {
-		background-image: url("../../images/banner.jpg");
+		background-image: url("../../images/banner07.jpg");
 		background-position: center center;
 		background-size: cover;
 		height: 28em;
@@ -2611,6 +2612,12 @@
 			text-align: center;
 			font-size: 0.9em;
 		}
+		
+		.logoImg{
+		position: absolute;
+		margin-top:-55px; 
+		margin-left:-32px;
+	}
 
 /* Wide */
 
@@ -3148,5 +3155,12 @@
 				padding: 2em 20px;
 				text-align: left;
 			}
+			
+		.logoImg{
+			margin-top: -17px;
+			margin-left: -19px;
+			width: 90px;
+		}
 
 	}
+	
