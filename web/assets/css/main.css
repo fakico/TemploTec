@@ -2614,10 +2614,45 @@
 		}
 		
 		.logoImg{
-		position: absolute;
-		margin-top:-55px; 
-		margin-left:-32px;
-	}
+			position: absolute;
+			margin-top:-55px; 
+			margin-left:-32px;
+		}
+		.LandingSkills{
+			text-align: center;
+		}
+		.LandingSkills-item{
+			display: inline-block;
+			margin-bottom: 20px;
+			margin-left: 40px;
+			width: 95px;
+			vertical-align: top;
+		}	
+		.LandingSkills-item p{
+			margin:0;
+		}
+		.tituloCursos{
+			text-align: center;
+			font-size: 1.95em;
+		}
+		.LandingSummary-bullet, .LandingSummary-topic {
+			display: inline-block;
+		}
+		.LandingSummary-topic {
+			padding-left: 20px;
+		}
+		.LandingSummary-bullet {
+			min-width: 10px;
+			max-width: 10px;
+			max-height: 10px;
+			min-height: 10px;
+			-webkit-border-radius: 5px;
+			border-radius: 5px;
+			background: #d6dfbc;
+			margin-top: 5px;
+			margin-right: 12px;
+			position: absolute;
+		}
 
 /* Wide */
 
@@ -3160,6 +3195,10 @@
 			margin-top: -17px;
 			margin-left: -19px;
 			width: 90px;
+		}
+		
+		.LandingSkills-item{
+			margin-left: 0px;
 		}
 
 	}
