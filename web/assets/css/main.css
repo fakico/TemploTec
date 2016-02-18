@@ -2653,6 +2653,16 @@
 			margin-right: 12px;
 			position: absolute;
 		}
+		.TemploColor{
+			font-size: 1.2em;
+			letter-spacing: -0.025em;
+			color: #37c0fb;
+			font-weight: bold;
+		}
+		
+		.TemploContent{
+			font-weight: bold;
+		}
 
 /* Wide */
 
