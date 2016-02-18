@@ -1,6 +1,6 @@
 a(name="contactanos")
 h3 ¿Deseas información sobre nuestros cursos y entrenamientos?
-form
+form(action="/message/send", method="POST")
   .row(class='50%')
     .6u(class='12u(mobilep)')
       input#name(type='text', name='name', placeholder='Nombres')

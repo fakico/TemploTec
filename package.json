@@ -4,9 +4,14 @@
   "description": "Site de TemploTec",
   "main": "index.js",
   "dependencies": {
+    "body-parser": "^1.15.0",
     "express": "^4.13.4",
     "helmet": "^1.1.0",
-    "jade": "^1.11.0"
+    "jade": "^1.11.0",
+    "joi": "^8.0.1",
+    "nodemailer": "^2.1.0",
+    "q": "^1.4.1",
+    "serve-favicon": "^2.3.0"
   },
   "devDependencies": {},
   "scripts": {
