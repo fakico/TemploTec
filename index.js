@@ -4,6 +4,8 @@ var express = require('express'),
 	path = require('path');
 	util = require('util');
 
+var port = 8080;
+
 app.use(helmet());
 
 app.set('views', path.join(__dirname, '/views'));
@@ -51,4 +53,4 @@ app.use(function(req, res){
 	res.render('404');
 });
 
-app.listen(80);
+app.listen(port);
