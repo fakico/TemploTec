@@ -19,10 +19,13 @@ app.set('view engine', 'jade');
 app.use('/', require('./routes/index.js'));
 
 //error middleware
-app.use(function(err, req, res, next){
-	//res.render('404');
-	console.log(err);
+app.use(function(err, req, res, next){		
 	res.redirect('/');
 });
+
+//404
+app.all('*', function(req, res){
+	res.redirect('/');
+})
 
 app.listen(port);
