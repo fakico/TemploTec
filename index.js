@@ -11,7 +11,7 @@ app.use(helmet());
 app.use(bodyParser.urlencoded({extended: false}));
 var ms_hour = 1000 * 60 * 60;
 app.use(express.static(path.join(__dirname, '/public'), {maxAge: ms_hour * 12}));
-//app.use(favicon(__dirname + '/public/images/favicon/favicon2.ico'));
+app.use(favicon(__dirname + '/public/images/favicon/favicon.ico'));
 
 //template engine
 app.set('views', path.join(__dirname, '/views'));
