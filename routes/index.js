@@ -50,14 +50,14 @@ router.post('/message/send', function(req, res){
 		if(!err){ //valide
 			emailHelper.sendInfo(req.body.name, req.body.email, req.body.message).then(
 				function(result){
-					res.redirect('/');
+					res.redirect('/?message=true');
 				},
 				function(err){
-					res.redirect('/');
+					res.redirect('/?message=false');
 				}
 			);			
 		}else{
-			res.redirect('/');
+			res.redirect('/?message=false');
 		}
 	})
 });

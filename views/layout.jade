@@ -28,3 +28,13 @@ html
     //if lte IE 8
       script(src='/assets/js/ie/respond.min.js')
     script(src='/assets/js/main.js')
+
+    script.
+      $(function(){      
+        if(window.location.search === "?message=true"){
+          alert("Gracias por ponerse en contacto con nosotros!");
+        }
+        if(window.location.search === "?message=false"){
+          alert("No pudimos registrar tus datos, por favor envíanos un correo a informes@templotec.com");
+        }
+      });
