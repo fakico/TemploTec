@@ -1,93 +1,102 @@
 extends ../layout
 block content
-	// Main
-	section.wrapper.style1
-		.container
-			.row(class='200%')
-				.4u(class='12u(narrower)')
-					#sidebar
-						// Sidebar
-						section
-							h3 Aprenderás
-							p
-								| Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus.
-								| Praesent semper mod quis eget mi. Etiam eu ante risus. Aliquam erat volutpat.
-								| Aliquam luctus et mattis lectus sit amet pulvinar. Nam turpis et nisi etiam.
-							footer
-								a.button(href='#') Continue Reading						
-				.8u(class='12u(narrower) important(narrower)')
-					#content
-						// Content
-						article
-							header
-								h2 AngularJS
-							span.image.featured
-								img(src='/images/angularbanner07.jpg', alt='angularbanner')
-							p.justify
-								| AngularJS es un framework Javascript de código abierto mantenido por Google, que ayuda con la
-								| ejecución de aplicaciones de una sola página(SPA). En muy poco tiempo se ha convertido en la tecnología
-								| de referencia para la construcción de este tipo de aplicaciones web modernas.
-								| El objetivo de AngularJS es extender HTML para facilitar la creación de aplicaciones basadas en el
-								| patrón MVC (Modelo-Vista-Controlador) y con inyección de dependencias, de modo que podamos escribir
-								| código ordenado, mantenible y testeable.
-							h3.tituloCursos Aprenderás
-							.LandingSkills
-								.LandingSkills-item
-									.LandingSkills-image
-										img(src='/images/angularicon.png', alt='AngularJS', height='70', width='70')
-									p.LadingSkills-image AngularJS
-							ul.LandingSummary-list
-								li.LandingSummary-item
-									.LandingSummary-bullet
-									span.LandingSummary-topic Herramientas apropiadas para trabajar con AngularJS
-								li.LandingSummary-item
-									.LandingSummary-bullet
-									span.LandingSummary-topic Patrón MVC
-								li.LandingSummary-item
-									.LandingSummary-bullet
-									span.LandingSummary-topic Inyección de Dependencias
-								li.LandingSummary-item
-									.LandingSummary-bullet
-									span.LandingSummary-topic Estructura de una aplicación AngularJS
-								li.LandingSummary-item
-									.LandingSummary-bullet
-									span.LandingSummary-topic Controladores
-								li.LandingSummary-item
-									.LandingSummary-bullet
-									span.LandingSummary-topic Módulos
-								li.LandingSummary-item
-									.LandingSummary-bullet
-									span.LandingSummary-topic Vistas
-								li.LandingSummary-item
-									.LandingSummary-bullet
-									span.LandingSummary-topic Data Binding
-								li.LandingSummary-item
-									.LandingSummary-bullet
-									span.LandingSummary-topic Routing
-								li.LandingSummary-item
-									.LandingSummary-bullet
-									span.LandingSummary-topic Servicios
-								li.LandingSummary-item
-									.LandingSummary-bullet
-									span.LandingSummary-topic Filtros
-								li.LandingSummary-item
-									.LandingSummary-bullet
-									span.LandingSummary-topic Directivas Nativas y Directivas propias personalizadas
-								li.LandingSummary-item
-									.LandingSummary-bullet
-									span.LandingSummary-topic Manejo de Formularios con AngularJS
-								li.LandingSummary-item
-									.LandingSummary-bullet
-									span.LandingSummary-topic Validaciones de datos
-								li.LandingSummary-item
-									.LandingSummary-bullet
-									span.LandingSummary-topic Servicios : REST, AJAX, factorías, asincronía, promises etc
-								li.LandingSummary-item
-									.LandingSummary-bullet
-									span.LandingSummary-topic Internalización y globalización de aplicaciones
-								li.LandingSummary-item
-									.LandingSummary-bullet
-									span.LandingSummary-topic Consideraciones sobre rendimiento
-								li.LandingSummary-item
-									.LandingSummary-bullet
-									span.LandingSummary-topic Depuración de aplicaciones AngularJS
+  // Main
+  section.wrapper.style1
+    .container
+      .row(class='200%')
+        .4u(class='12u(narrower)')
+          #sidebar
+            // Sidebar
+            section
+              h3 AngularJS en el desarrollo de hoy
+              p.justify
+                | Si sabes HTML y algo de JavaScript puedes aprender AngularJS sin problemas.
+                | Sólo HTML es perfecto para páginas estáticas, el problema viene cuando quieres
+                | incluir algún elemento dinámico, como por ejemplo formularios que validen los
+                | datos sin necesidad de recargar la página o efectos al clickear en botones entre otros.
+              p.justify
+                | AngularJS nos ofrece un mundo de soluciones tan solo utilizando HTML, y el resultado
+                | es realmente magnífico fácil de desarrollar y de leer.
+              footer
+                a.button(href='http://blog.theprogrammingplanet.com/angularjs-en-el-desarrollo-de-hoy/', target='_blank') Continuar leyendo
+        .8u(class='12u(narrower) important(narrower)')
+          #content
+            // Content
+            article
+              header
+                h2 AngularJS
+              span.image.featured
+                img(src='/images/angularbanner07.jpg', alt='angularbanner')
+              p.justify
+                | AngularJS es un framework Javascript de código abierto mantenido por Google, que ayuda con la
+                | ejecución de aplicaciones de una sola página(SPA). En muy poco tiempo se ha convertido en la tecnología
+                | de referencia para la construcción de este tipo de aplicaciones web modernas.
+              p.justify
+                | El objetivo de AngularJS es extender HTML para facilitar la creación de aplicaciones basadas en el
+                | patrón MVC (Modelo-Vista-Controlador) y con inyección de dependencias, de modo que podamos escribir
+                | código ordenado, mantenible y testeable.
+              h3.tituloCursos Aprenderás
+              .LandingSkills
+                .LandingSkills-item
+                  .LandingSkills-image
+                    img(src='/images/angularicon.png', alt='AngularJS', height='70', width='70')
+                  p.LadingSkills-image AngularJS
+                .LandingSkills-item
+                  .LandingSkills-image
+                    img(src='/images/jsicon.png', alt='Javascript', height='70', width='70')
+                  p.LadingSkills-image Javascript
+              ul.LandingSummary-list
+                li.LandingSummary-item
+                  .LandingSummary-bullet
+                  span.LandingSummary-topic Herramientas apropiadas para trabajar con AngularJS
+                li.LandingSummary-item
+                  .LandingSummary-bullet
+                  span.LandingSummary-topic Patrón MVC
+                li.LandingSummary-item
+                  .LandingSummary-bullet
+                  span.LandingSummary-topic Inyección de Dependencias
+                li.LandingSummary-item
+                  .LandingSummary-bullet
+                  span.LandingSummary-topic Estructura de una aplicación AngularJS
+                li.LandingSummary-item
+                  .LandingSummary-bullet
+                  span.LandingSummary-topic Controladores
+                li.LandingSummary-item
+                  .LandingSummary-bullet
+                  span.LandingSummary-topic Módulos
+                li.LandingSummary-item
+                  .LandingSummary-bullet
+                  span.LandingSummary-topic Vistas
+                li.LandingSummary-item
+                  .LandingSummary-bullet
+                  span.LandingSummary-topic Data Binding
+                li.LandingSummary-item
+                  .LandingSummary-bullet
+                  span.LandingSummary-topic Routing
+                li.LandingSummary-item
+                  .LandingSummary-bullet
+                  span.LandingSummary-topic Servicios
+                li.LandingSummary-item
+                  .LandingSummary-bullet
+                  span.LandingSummary-topic Filtros
+                li.LandingSummary-item
+                  .LandingSummary-bullet
+                  span.LandingSummary-topic Directivas Nativas y Directivas propias personalizadas
+                li.LandingSummary-item
+                  .LandingSummary-bullet
+                  span.LandingSummary-topic Manejo de Formularios con AngularJS
+                li.LandingSummary-item
+                  .LandingSummary-bullet
+                  span.LandingSummary-topic Validaciones de datos
+                li.LandingSummary-item
+                  .LandingSummary-bullet
+                  span.LandingSummary-topic Servicios : REST, AJAX, factorías, asincronía, promises etc
+                li.LandingSummary-item
+                  .LandingSummary-bullet
+                  span.LandingSummary-topic Internalización y globalización de aplicaciones
+                li.LandingSummary-item
+                  .LandingSummary-bullet
+                  span.LandingSummary-topic Consideraciones sobre rendimiento
+                li.LandingSummary-item
+                  .LandingSummary-bullet
+                  span.LandingSummary-topic Depuración de aplicaciones AngularJS

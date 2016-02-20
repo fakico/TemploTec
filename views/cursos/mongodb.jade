@@ -1,37 +1,41 @@
 extends ../layout
 block content
-	// Main
-	section.wrapper.style1
-		.container
-			.row(class='200%')
-				.4u(class='12u(narrower)')
-					#sidebar
-						// Sidebar
-						section
-							h3 Aprenderás
-							p
-								| Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus.
-								| Praesent semper mod quis eget mi. Etiam eu ante risus. Aliquam erat volutpat.
-								| Aliquam luctus et mattis lectus sit amet pulvinar. Nam turpis et nisi etiam.
-							footer
-								a.button(href='#') Continue Reading						
-				.8u(class='12u(narrower) important(narrower)')
-					#content
-						// Content
-						article
-							header
-								h2 MongoDB								
-							span.image.featured
-								img(src='/images/mongobanner03.jpg', alt='')
-							p.justify
-								| MongoDB es un sistema de base de datos multiplataforma orientado a documentos, de esquema libre.
-								| Las características que más destacaría de MongoDB son su velocidad y su rico pero sencillo sistema de consulta de los
-								| contenidos de la base de datos. Se podría decir que alcanza un balance perfecto entre rendimiento y funcionalidad,
-								| incorporando muchos de los tipos de consulta que utilizaríamos en nuestro sistema relacional preferido,
-								| pero sin sacrificar en rendimiento.
-							h3.tituloCursos Aprenderás
-							.LandingSkills
-								.LandingSkills-item
-									.LandingSkills-image
-										img(src='/images/mongodbicon.png', alt='MongoDB', height='70', width='70')
-									p.LadingSkills-image MongoDB
+  // Main
+  section.wrapper.style1
+    .container
+      .row(class='200%')
+        .4u(class='12u(narrower)')
+          #sidebar
+            // Sidebar
+            section
+              h3 Vistazo rápido
+              p.justify
+                | Se trata de una base de datos NoSQL orientada a documentos open-source.
+                | El término orientado a documentos no quiere decir que se almacenen documentos
+                | pdf ni docx. En vez de almacenar datos en tablas como hasta ahora conocíamos,
+                | MongoDB almacena estructuras de datos en documentos tipo JSON (o BSON)
+                | con un esquema dinámico, aportando que la integración de los datos en las
+                | aplicaciones que requieran de estos sea mucho más fácil y rápida.
+              footer
+                a.button(href='#') Continue Reading
+        .8u(class='12u(narrower) important(narrower)')
+          #content
+            // Content
+            article
+              header
+                h2 MongoDB
+                // <p>Sidebar on the left, content on the right.</p>
+              span.image.featured
+                img(height='370', src='/images/mongobanner03.jpg', alt='')
+              p.justify
+                | MongoDB es un sistema de base de datos multiplataforma orientado a documentos, de esquema libre.
+                | Las características que más destacaría de MongoDB son su velocidad y su rico pero sencillo sistema de consulta de los
+                | contenidos de la base de datos. Se podría decir que alcanza un balance perfecto entre rendimiento y funcionalidad,
+                | incorporando muchos de los tipos de consulta que utilizaríamos en nuestro sistema relacional preferido,
+                | pero sin sacrificar en rendimiento.
+              h3.tituloCursos Aprenderás
+              .LandingSkills
+                .LandingSkills-item
+                  .LandingSkills-image
+                    img(src='/images/mongodbicon.png', alt='MongoDB', height='70', width='70')
+                  p.LadingSkills-image MongoDB
