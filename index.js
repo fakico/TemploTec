@@ -5,6 +5,8 @@ var express = require('express'),
 	bodyParser = require('body-parser'),
   favicon = require('serve-favicon'),
 	port = process.env.TEMPLOTEC_PORT || 80;
+  var path = require('path');
+  global.appRoot = path.resolve(__dirname);
 
 //middleware
 app.use(helmet());

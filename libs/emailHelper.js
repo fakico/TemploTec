@@ -1,5 +1,7 @@
 var nodemailer = require('nodemailer');    
 var Q = require('q');
+var fs = require('fs');
+var path = require('path');
 
 //http://www.onlinehtmleditor.net/
 //https://github.com/niftylettuce/node-email-templates
@@ -60,8 +62,48 @@ function EmailHelper(){
         return d.promise;
     }   
 
+    function sendMailingTemplate(token, email){
+        debugger;
+        var d = Q.defer();
+        var secret_token = process.env.TEMPLOTEC_TOKEN;
+        if(secret_token == "undefined"){
+            process.nextTick(function(){
+                return d.reject("server token is not set");
+            });
+        }
+
+        if(token === secret_token){
+            var templatePath = path.join(global.appRoot, '/resources/mailing/mailing_nodejs.html');
+            fs.readFile(templatePath, function(err, htmlContent){
+                if(err){
+                    return d.reject(err);
+                }
+                var mailOptions = {
+                    from: senderAddress,
+                    to: email,
+                    subject: "Solicitud de informes curso Node.js",
+                    html: htmlContent
+                };
+                transporter.sendMail(mailOptions, function(error, info){
+                   if(error){
+                       d.reject(error);
+                   }else{
+                       d.resolve(info); //todo: pending to validate status
+                   }
+                });
+
+            });
+        }else{
+            process.nextTick(function(){
+                return d.reject("invalid token");
+            });            
+        }
+        return d.promise;
+    }
+
     return {
-        sendInfo: sendInfo
+        sendInfo: sendInfo,
+        sendMailingTemplate: sendMailingTemplate
     }
 }
 

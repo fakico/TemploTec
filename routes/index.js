@@ -62,4 +62,17 @@ router.post('/message/send', function(req, res){
 	})
 });
 
+router.get('/mailing/:token/:email', function(req, res){
+	var token = req.params.token,
+			email = req.params.email;
+
+			emailHelper.sendMailingTemplate(token, email).then(
+				function(result){					
+					res.json({status: 'ok', destiny: email});
+				},
+				function(err){					
+					res.send("error");
+				});
+});
+
 module.exports = router;
